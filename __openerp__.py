@@ -7,5 +7,6 @@
     'data': [
         'vnpt_dhcd_menu.xml'
     ],
-    'installable': True
+    'installable': True,
+    'application': True
 }
