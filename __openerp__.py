@@ -4,6 +4,8 @@
     'depends': [],
     'init_xml': [
     ],
-    'data': [],
+    'data': [
+        'vnpt_dhcd_menu.xml'
+    ],
     'installable': True
 }
