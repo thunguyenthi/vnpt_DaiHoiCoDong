@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+      <record id = "dhcd_from_view" model = "ir.ui.view">
+          <field name = "name">DHCD From View</field>
+          <field name = "model">demovppt.demovppt</field>
+          <field name = "arch" type = "xml">
+              <form string = "DHCD">
+                  <sheet>
+                      <group>
+                          <field name = "name"/>
+                          <field name = "ma_co_dong"/>
+                          <field name='dia_chi'/>
+                          <field name = "email" type = "email"/>
+                          <field name = "phone"/>
+                          <field name = "gender"/>
+                          <field name = "is_active"/>
+                          <field name = "birth_date"/>
+                          <field name='so_co_dong'/>
+                      </group>
+                  </sheet>
+              </form>
+          </field>
+      </record>
+      <record id = "dhcd_tree_view" model = "ir.ui.view">
+          <field name = "name">DHCD Tree View</field>
+          <field name = "model">demovppt.demovppt</field>
+          <field name = "arch" type = "xml">
+              <tree name = "DHCD">
+                   <field name = "name"/>
+                   <field name = "ma_co_dong"/>
+                   <field name='dia_chi'/>
+                   <field name = "email"/>
+                   <field name = "phone"/>
+                   <field name = "gender"/>
+                   <field name = "is_active"/>
+                   <field name = "birth_date"/>
+                   <field name='so_co_dong'/>
+              </tree>
+          </field>
+      </record>
+      <record id = "dhch_dhcd_action" model = "ir.actions.act.window">
+          <field name = "name">DHCD</field>
+          <field name = "res_model">demovppt.demovppt</field>
+          <field name = "view_mode">tree,from</field>
+      </record>
+
+      
+      <!-- SEARCH View  --> 
+      <record id="view_module_search" model="ir.ui.view">
+          <field name = "name">DHCD_Search</field>
+          <field name = "res_model">demovppt.demovppt</field>
+          <field name="arch" type="xml">
+              <search string="DHCD">
+                  <filter name="name" string="name"
+                            domain="[('name', '=', uid)]"/>
+                  <separator orientation="vertical"/>
+                  <group  expand='0' string='Group by...'>
+                       <filter string='name' domain="[]" context="{'group_by' : 'name'}" />
+                  </group>
+                  <field name = "name"/>
+                  <field name = "ma_co_dong"/>
+                  <field name='dia_chi'/>
+                  <field name = "email"/>
+                  <field name = "phone"/>
+                  <field name = "gender"/>
+                  <field name = "is_active"/>
+                  <field name = "birth_date"/>
+                  <field name='so_co_dong'/>
+              </search>
+          </field>
+        </record>
+  </data>
+</openerp>

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+      <menuitem name = "Đại hội cổ đông" id = "dhcd_man_menu" sequence = "1"/>
+      <menuitem name = "đại hội cổ đông" id = "dhcd_menu" sequence = "10" parent  = "dhcd_man_menu"/>
+      <menuitem name = "danh sách cổ đông theo tỉnh" id = "DHCD_info" sequence = "10" parent  = "dhcd_menu" action = "dhch_dhcd_action"/> 
+      <menuitem id="hanoi_id" name="Hà Nội" parent="DHCD_info" action="dhch_dhcd_action"/>  
+      <menuitem id="saigon_id" name="Sài Gòn" parent="DHCD_info" action="dhch_dhcd_action"/>  
+      <menuitem id="danang_id" name="Đà Nẵng" parent="DHCD_info" action="dhch_dhcd_action"/>  
+      <menuitem id="cantho_id" name="Cần Thơ" parent="DHCD_info" action="dhch_dhcd_action"/>  
+      <menuitem id="dalat_id" name="Đà Lạt" parent="DHCD_info" action="dhch_dhcd_action"/>  
     </data>
 </openerp>

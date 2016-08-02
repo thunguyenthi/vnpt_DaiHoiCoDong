@@ -5,9 +5,9 @@
     'init_xml': [
     ],
     'data': [
-        'vnpt_dhcd_menu.xml'
+        'vnpt_dhcd_menu.xml',
+        'views/DS_dai_bieu.xml',
     ],
     'installable': True,
     'application': True
-    
 }
